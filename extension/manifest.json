@@ -16,5 +16,10 @@
             "matches": ["https://music.youtube.com/*"],
              "js": ["youtubeMusic.js"]
         }
-    ]
+    ],
+    "host_permissions": [
+  "https://genre-sync-hxiq.onrender.com/*",
+  "https://open.spotify.com/*",
+  "https://music.youtube.com/*"
+]
 }
