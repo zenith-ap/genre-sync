@@ -92,7 +92,7 @@ function displayGenre(container, genres) {
 async function getGenre(song, artist) {
     try {
         const response = await fetch(
-            `http://localhost:5000/api/genre?song=${encodeURIComponent(song)}&artist=${encodeURIComponent(artist)}`
+            `https://genre-sync-hxiq.onrender.com/api/genre?song=${encodeURIComponent(song)}&artist=${encodeURIComponent(artist)}`
         );
 
         const data = await response.json();
