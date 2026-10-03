@@ -1,0 +1,20 @@
+{
+    "manifest_version":3,
+    "name":"Music genre finder",
+    "version": "1.0.0",
+    "description":"Shows the genre of songs on music platforms",
+    "permissions":[],
+    "action":{
+        "default_title":"Music Genre Finder"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://open.spotify.com/*"],
+            "js":["content.js"]
+        },
+        {
+            "matches": ["https://music.youtube.com/*"],
+             "js": ["youtubeMusic.js"]
+        }
+    ]
+}
